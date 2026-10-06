@@ -1,0 +1,12 @@
+name: 'winter.mall::lang.product.properties'
+modelClass: Winter\Mall\Models\Property
+form: $/winter/mall/models/property/fields.yaml
+defaultRedirect: winter/mall/properties
+create:
+    title: 'winter.mall::lang.titles.properties.create'
+    redirect: 'winter/mall/properties/update/:id'
+    redirectClose: winter/mall/properties
+update:
+    title: 'winter.mall::lang.titles.properties.edit'
+    redirect: winter/mall/properties
+    redirectClose: winter/mall/properties

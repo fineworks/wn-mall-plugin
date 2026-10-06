@@ -1,0 +1,10 @@
+columns:
+    custom_field_id:
+        label: custom_field_id
+        type: number
+    name:
+        label: 'winter.mall::lang.custom_field_options.option'
+        type: text
+    price:
+        label: 'winter.mall::lang.product.price'
+        type: mall.price

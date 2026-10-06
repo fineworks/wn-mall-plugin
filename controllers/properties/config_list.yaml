@@ -1,0 +1,12 @@
+title: 'winter.mall::lang.product.properties'
+modelClass: Winter\Mall\Models\Property
+list: $/winter/mall/models/property/columns.yaml
+recordUrl: 'winter/mall/properties/update/:id'
+noRecordsMessage: 'backend::lang.list.no_records'
+recordsPerPage: 20
+showSetup: true
+showCheckboxes: true
+toolbar:
+    buttons: list_toolbar
+    search:
+        prompt: 'backend::lang.list.search_prompt'

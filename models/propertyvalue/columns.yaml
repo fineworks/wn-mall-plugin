@@ -1,0 +1,9 @@
+columns:
+    property:
+        label: 'winter.mall::lang.common.property'
+        type: text
+        searchable: true
+    value:
+        label: 'winter.mall::lang.product.property_value'
+        type: text
+        searchable: true

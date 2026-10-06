@@ -1,0 +1,11 @@
+name: 'winter.mall::lang.common.variants'
+modelClass: Winter\Mall\Models\Variant
+form: $/winter/mall/models/variant/fields.yaml
+defaultRedirect: winter/mall/variants
+create:
+    redirect: 'winter/mall/variants/update/:id'
+    redirectClose: winter/mall/variants
+update:
+    redirect: winter/mall/variants
+    redirectClose: winter/mall/variants
+preview: {  }

@@ -1,0 +1,8 @@
+# ===================================
+#  Import/Export Behavior Config
+# ===================================
+
+export:
+    title: winter.mall::lang.titles.orders.export
+    modelClass: Winter\Mall\Models\OrderExport
+    list: $/winter/mall/models/order/export_columns.yaml

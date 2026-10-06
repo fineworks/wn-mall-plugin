@@ -1,0 +1,11 @@
+name: 'winter.mall::lang.common.address'
+modelClass: Winter\Mall\Models\Address
+form: $/winter/mall/models/address/fields.yaml
+defaultRedirect: winter/mall/addresses
+create:
+    redirect: 'winter/mall/addresses/update/:id'
+    redirectClose: winter/mall/addresses
+update:
+    redirect: winter/mall/addresses
+    redirectClose: winter/mall/addresses
+preview: {  }

@@ -1,0 +1,13 @@
+name: 'winter.mall::lang.common.services'
+modelClass: Winter\Mall\Models\Service
+form: $/winter/mall/models/service/fields.yaml
+defaultRedirect: winter/mall/services
+create:
+    title: 'winter.mall::lang.titles.services.create'
+    redirect: 'winter/mall/services/update/:id'
+    redirectClose: winter/mall/services
+update:
+    title: 'winter.mall::lang.titles.services.update'
+    redirect: winter/mall/services
+    redirectClose: winter/mall/services
+preview: {  }

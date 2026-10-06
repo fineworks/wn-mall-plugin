@@ -1,0 +1,14 @@
+name: 'winter.mall::lang.common.shipping_methods'
+modelClass: Winter\Mall\Models\ShippingMethod
+form: $/winter/mall/models/shippingmethod/fields.yaml
+defaultRedirect: winter/mall/shippingmethods
+create:
+    title: 'winter.mall::lang.titles.shipping_methods.create'
+    redirect: 'winter/mall/shippingmethods/update/:id'
+    redirectClose: winter/mall/shippingmethods
+update:
+    title: 'winter.mall::lang.titles.shipping_methods.update'
+    redirect: winter/mall/shippingmethods
+    redirectClose: winter/mall/shippingmethods
+preview:
+    title: 'winter.mall::lang.titles.shipping_methods.preview'

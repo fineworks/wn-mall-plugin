@@ -1,0 +1,15 @@
+columns:
+    name:
+        label: 'winter.mall::lang.common.name'
+        type: text
+        searchable: true
+        sortable: true
+    percentage:
+        label: 'winter.mall::lang.tax.percentage'
+        type: text
+        searchable: true
+        sortable: true
+    is_default:
+        label: 'winter.mall::lang.tax.is_default'
+        type: switch
+        searchable: true

@@ -1,0 +1,62 @@
+columns:
+    sort_order_handle:
+        label: " "
+        type: partial
+        path: $/winter/mall/partials/_reorder_handle.htm
+        sortable: false
+        width: 20px
+    pivot[sort_order]:
+        invisible: true
+        type: number
+        sortable: true
+    published:
+        label: 'winter.mall::lang.product.published_short'
+        type: partial
+        path: $/winter/mall/models/variant/_published.htm
+    user_defined_id:
+        label: 'winter.mall::lang.product.user_defined_id'
+        type: text
+        searchable: true
+        sortable: true
+    name:
+        type: text
+        label: 'winter.mall::lang.common.name'
+        searchable: true
+        sortable: true
+    properties_description:
+        type: partial
+        path: $/winter/mall/models/variant/_description.htm
+        label: 'winter.mall::lang.common.properties'
+        searchable: true
+        sortable: false
+    stock:
+        label: 'winter.mall::lang.product.stock'
+        type: number
+    price:
+        label: 'winter.mall::lang.product.price'
+        type: partial
+        invisible: true
+        path: $/winter/mall/models/variant/_price.htm
+        sortable: false
+    old_price:
+        label: 'winter.mall::lang.common.old_price'
+        type: text
+        invisible: true
+        sortable: false
+    allow_out_of_stock_purchases:
+        label: 'winter.mall::lang.product.allow_out_of_stock_purchases'
+        type: partial
+        path: $/winter/mall/models/variant/_allow_out_of_stock_purchases.htm
+        invisible: true
+    created_at:
+        label: 'winter.mall::lang.common.created_at'
+        type: date
+        invisible: true
+        format: 'd.m.Y H:i'
+        sortable: true
+    updated_at:
+        label: 'winter.mall::lang.common.updated_at'
+        type: date
+        invisible: true
+        format: 'd.m.Y H:i'
+        sortable: true

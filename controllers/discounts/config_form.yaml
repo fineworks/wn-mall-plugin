@@ -1,0 +1,14 @@
+name: 'winter.mall::lang.common.discount'
+modelClass: Winter\Mall\Models\Discount
+form: $/winter/mall/models/discount/fields.yaml
+defaultRedirect: winter/mall/discounts
+create:
+    title: 'winter.mall::lang.titles.discounts.create'
+    redirect: 'winter/mall/discounts/update/:id'
+    redirectClose: winter/mall/discounts
+update:
+    title: 'winter.mall::lang.titles.discounts.update'
+    redirect: winter/mall/discounts
+    redirectClose: winter/mall/discounts
+preview:
+    title: 'winter.mall::lang.titles.discounts.preview'

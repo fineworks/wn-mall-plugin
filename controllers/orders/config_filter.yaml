@@ -1,0 +1,28 @@
+# ===================================
+# Filter Scope Definitions
+# ===================================
+
+scopes:
+    status:
+        label: winter.mall::lang.order.status
+        type: group
+        modelClass: Winter\Mall\Models\OrderState
+        conditions: order_state_id in (:filtered)
+        nameFrom: name
+    payment_state:
+        label: winter.mall::lang.order.payment_status
+        type: group
+        conditions: payment_state in (:filtered)
+        options:
+            Winter\Mall\Classes\PaymentState\PaidState: winter.mall::lang.payment_status.paid
+            Winter\Mall\Classes\PaymentState\RefundedState: winter.mall::lang.payment_status.refunded
+            Winter\Mall\Classes\PaymentState\FailedState: winter.mall::lang.payment_status.failed
+            Winter\Mall\Classes\PaymentState\PendingState: winter.mall::lang.payment_status.pending
+    shipping_pending:
+        label: winter.mall::lang.order.shipping_pending
+        type: checkbox
+        conditions: shipped_at is null
+    created_at:
+        label: winter.mall::lang.order.creation_date
+        type: daterange
+        conditions: created_at >= ':after' AND created_at <= ':before'

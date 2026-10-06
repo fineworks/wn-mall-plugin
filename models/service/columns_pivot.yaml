@@ -1,0 +1,10 @@
+columns:
+    name:
+        label: 'winter.mall::lang.common.name'
+        type: text
+        searchable: true
+        sortable: true
+    pivot[required]:
+        label: 'winter.mall::lang.services.required'
+        type: switch
+        sortable: true

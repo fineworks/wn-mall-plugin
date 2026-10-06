@@ -1,0 +1,21 @@
+fields:
+    enabled:
+        label: winter.mall::lang.review_settings.enabled
+        comment: winter.mall::lang.review_settings.enabled_comment
+        type: switch
+    moderated:
+        label: winter.mall::lang.review_settings.moderated
+        comment: winter.mall::lang.review_settings.moderated_comment
+        type: switch
+        trigger:
+            action: enable
+            field: enabled
+            condition: checked
+    allow_anonymous:
+        label: winter.mall::lang.review_settings.allow_anonymous
+        comment: winter.mall::lang.review_settings.allow_anonymous_comment
+        type: switch
+        trigger:
+            action: enable
+            field: enabled
+            condition: checked

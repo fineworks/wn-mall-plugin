@@ -1,0 +1,12 @@
+# ===================================
+#  Relation Behavior Config
+# ===================================
+
+addresses:
+    label: 'winter.mall::lang.common.address'
+    manage:
+        form: $/winter/mall/models/address/fields.yaml
+        list: $/winter/mall/models/address/columns.yaml
+    view:
+        list: $/winter/mall/models/address/columns.yaml
+        toolbarButtons: create|delete

@@ -1,0 +1,15 @@
+title: 'winter.mall::lang.common.shipping_methods'
+modelClass: Winter\Mall\Models\ShippingMethod
+list: $/winter/mall/models/shippingmethod/columns.yaml
+recordUrl: 'winter/mall/shippingmethods/update/:id'
+noRecordsMessage: 'backend::lang.list.no_records'
+recordsPerPage: 20
+showSetup: true
+showCheckboxes: true
+defaultSort:
+    column: sort_order
+    direction: asc
+toolbar:
+    buttons: list_toolbar
+    search:
+        prompt: 'backend::lang.list.search_prompt'

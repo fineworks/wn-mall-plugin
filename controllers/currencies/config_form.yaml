@@ -1,0 +1,11 @@
+name: Currencies
+modelClass: Winter\Mall\Models\Currency
+form: $/winter/mall/models/currency/fields.yaml
+defaultRedirect: winter/mall/currencies
+create:
+    redirect: 'winter/mall/currencies/update/:id'
+    redirectClose: winter/mall/currencies
+update:
+    redirect: winter/mall/currencies
+    redirectClose: winter/mall/currencies
+preview: {  }

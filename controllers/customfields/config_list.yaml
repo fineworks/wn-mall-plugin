@@ -1,0 +1,12 @@
+title: 'winter.mall::lang.common.custom_fields'
+modelClass: Winter\Mall\Models\CustomField
+list: $/winter/mall/models/customfield/columns.yaml
+recordUrl: 'winter/mall/customfields/update/:id'
+noRecordsMessage: 'backend::lang.list.no_records'
+recordsPerPage: 20
+showSetup: true
+showCheckboxes: true
+toolbar:
+    buttons: list_toolbar
+    search:
+        prompt: 'backend::lang.list.search_prompt'

@@ -1,0 +1,5 @@
+title: 'winter.mall::lang.titles.payment_methods.reorder'
+modelClass: Winter\Mall\Models\PaymentMethod
+nameFrom: name
+toolbar:
+    buttons: reorder_toolbar

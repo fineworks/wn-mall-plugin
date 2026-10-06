@@ -1,0 +1,41 @@
+columns:
+    sort_order:
+        label: 'winter.mall::lang.common.sort_order'
+        type: number
+        invisible: true
+    enabled:
+        label:  'winter.mall::lang.notifications.enabled'
+        type: partial
+        path: enabled
+        sortable: false
+        clickable: false
+    name:
+        label: 'winter.mall::lang.common.name'
+        type: text
+        searchable: true
+        sortable: true
+    description:
+        label: 'winter.mall::lang.product.description'
+        type: text
+        searchable: true
+        sortable: true
+    code:
+        label: 'winter.mall::lang.common.code'
+        type: text
+        searchable: true
+        sortable: true
+    template:
+        label: 'winter.mall::lang.notifications.template'
+        type: text
+        searchable: true
+        sortable: true
+    created_at:
+        label: 'winter.mall::lang.common.created_at'
+        type: datetime
+        invisible: true
+        sortable: true
+    updated_at:
+        label: 'winter.mall::lang.common.updated_at'
+        type: datetime
+        invisible: true
+        sortable: true

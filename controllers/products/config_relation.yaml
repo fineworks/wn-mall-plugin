@@ -1,0 +1,102 @@
+# ===================================
+#  Relation Behavior Config
+# ===================================
+
+custom_fields:
+    label: 'winter.mall::lang.common.custom_fields'
+    view:
+        list: $/winter/mall/models/customfield/columns.yaml
+        toolbarButtons: add|create|remove
+    manage:
+        form: $/winter/mall/models/customfield/fields.yaml
+        recordsPerPage: 10
+        showSearch: true
+    deferredBinding: true
+
+files:
+    label: 'winter.mall::lang.product.product_file_version'
+    view:
+        list: $/winter/mall/models/productfile/columns.yaml
+        toolbarButtons: create|delete
+        showSorting: false
+        defaultSort: 'created_at DESC'
+        scope: sortLatest
+    manage:
+        form: $/winter/mall/models/productfile/fields.yaml
+        recordsPerPage: 10
+    deferredBinding: true
+
+services:
+    label: 'winter.mall::lang.common.services'
+    view:
+        list: $/winter/mall/models/service/columns.yaml
+        toolbarButtons: add|remove
+    manage:
+        form: $/winter/mall/models/service/fields.yaml
+        recordsPerPage: 10
+        showSearch: true
+    pivot:
+        form: $/winter/mall/models/service/fields_pivot.yaml
+    deferredBinding: true
+
+variants:
+    label: 'winter.mall::lang.common.variant'
+    view:
+        list: $/winter/mall/models/variant/columns.yaml
+        toolbarPartial: variants_toolbar
+    manage:
+        form: $/winter/mall/models/variant/fields.yaml
+        recordsPerPage: 10
+    deferredBinding: true
+
+accessories:
+    label: 'winter.mall::lang.common.accessories'
+    view:
+        list: $/winter/mall/models/product/columns.yaml
+        recordUrl: winter/mall/products/update/:id
+        toolbarButtons: add|remove
+    manage:
+        form: $/winter/mall/models/product/fields_create.yaml
+        recordsPerPage: 10
+        showSearch: true
+    deferredBinding: true
+
+taxes:
+    label: 'winter.mall::lang.common.taxes'
+    view:
+        list: $/winter/mall/models/tax/columns.yaml
+        toolbarButtons: add|create|remove
+    manage:
+        form: $/winter/mall/models/tax/fields.yaml
+        recordsPerPage: 10
+        showSearch: true
+    deferredBinding: true
+
+brand:
+    label: 'winter.mall::lang.common.brand'
+    view:
+        form: $/winter/mall/models/brand/fields_relation_manager.yaml
+        toolbarButtons: add|create|update|remove
+    manage:
+        form: $/winter/mall/models/brand/fields.yaml
+        list: $/winter/mall/models/brand/columns.yaml
+        showSearch: true
+        recordsPerPage: 10
+
+image_sets:
+    label: 'winter.mall::lang.common.images'
+    view:
+        list: $/winter/mall/models/imageset/columns.yaml
+        toolbarButtons: create|delete
+    manage:
+        list: $/winter/mall/models/imageset/columns.yaml
+        form: $/winter/mall/models/imageset/fields.yaml
+
+reviews:
+    label: 'winter.mall::lang.common.review'
+    view:
+        list: $/winter/mall/models/review/columns.yaml
+        toolbarButtons: create|delete
+    manage:
+        list: $/winter/mall/models/review/columns.yaml
+        form: $/winter/mall/models/review/fields.yaml

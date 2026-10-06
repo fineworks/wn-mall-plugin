@@ -1,0 +1,38 @@
+# ===================================
+#  Relation Behavior Config
+# ===================================
+
+property_groups:
+    label: 'winter.mall::lang.common.property_group'
+    deferredBinding: false
+    view:
+        list: $/winter/mall/models/propertygroup/columns_pivot.yaml
+        toolbarButtons: add|remove
+        recordUrl: 'winter/mall/propertygroups/update/:id'
+        defaultSort:
+            column: pivot[relation_sort_order]
+            direction: asc
+    manage:
+        form: $/winter/mall/models/propertygroup/fields_no_relation.yaml
+        list: $/winter/mall/models/propertygroup/columns.yaml
+
+products:
+    label: 'winter.mall::lang.common.product'
+    view:
+        list: $/winter/mall/models/product/columns_pivot.yaml
+        recordsPerPage: 10
+        recordUrl: winter/mall/products/update/:id
+        toolbarPartial: products_relation_partial
+        defaultSort:
+            column: pivot[sort_order]
+            direction: asc
+
+review_categories:
+    label: 'winter.mall::lang.common.review_category'
+    view:
+        list: $/winter/mall/models/reviewcategory/columns.yaml
+        recordsPerPage: 10
+        toolbarButtons: add|create|remove|delete
+    manage:
+        form: $/winter/mall/models/reviewcategory/fields.yaml
+        list: $/winter/mall/models/reviewcategory/columns.yaml

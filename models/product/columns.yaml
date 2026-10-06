@@ -1,0 +1,49 @@
+columns:
+    user_defined_id:
+        label: 'winter.mall::lang.product.user_defined_id'
+        type: text
+        searchable: true
+        sortable: true
+    name:
+        label: 'winter.mall::lang.product.name'
+        type: text
+        searchable: true
+        sortable: true
+    description:
+        label: 'winter.mall::lang.product.description'
+        searchable: true
+        sortable: true
+        invisible: true
+    published:
+        label: 'winter.mall::lang.product.published'
+        type: partial
+        path: $/winter/mall/models/product/_published.htm
+        sortable: true
+    is_virtual:
+        label: 'winter.mall::lang.product.is_virtual'
+        type: switch
+        sortable: true
+    categories:
+        label: 'winter.mall::lang.common.category'
+        relation: categories
+        select: name
+        sortable: true
+        searchable: true
+    price:
+        label: 'winter.mall::lang.product.price'
+        type: partial
+        path: $/winter/mall/models/product/_price.htm
+        searchable: false
+        sortable: false
+        align: right
+    stock:
+        label: 'winter.mall::lang.product.stock'
+        type: number
+        invisible: true
+    price_includes_tax:
+        label: 'winter.mall::lang.product.taxable'
+        type: partial
+        path: $/winter/mall/models/product/_taxable.htm
+        sortable: true
+        invisible: true
+

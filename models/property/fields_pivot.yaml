@@ -1,0 +1,53 @@
+fields:
+    pivot[use_for_variants]:
+        label: 'winter.mall::lang.properties.use_for_variants'
+        comment: 'winter.mall::lang.properties.use_for_variants_comment'
+        type: switch
+        span: auto
+    slug:
+        label: 'winter.mall::lang.common.slug'
+        span: auto
+        type: text
+        readOnly: true
+        context: update
+    name:
+        label: 'winter.mall::lang.common.name'
+        oc.commentPosition: ''
+        span: auto
+        type: text
+    pivot[filter_type]@update:
+        label: 'winter.mall::lang.properties.filter_type'
+        oc.commentPosition: ''
+        span: auto
+        type: dropdown
+        trigger:
+            action: hide
+            field: type
+            condition: 'value[date] or value[datetime]' # frontend filters for these types are not yet implemented.
+    type:
+        label: 'winter.mall::lang.custom_fields.type'
+        oc.commentPosition: ''
+        span: auto
+        type: dropdown
+    unit:
+        label: 'winter.mall::lang.common.unit'
+        oc.commentPosition: ''
+        span: auto
+        type: text
+    options:
+        label: 'winter.mall::lang.common.options'
+        oc.commentPosition: ''
+        prompt: 'Add new item'
+        span: full
+        trigger:
+            action: show
+            field: type
+            condition: 'value[dropdown][checkboxlist]'
+        type: repeater
+        form:
+            fields:
+                value:
+                    label: 'winter.mall::lang.common.option'
+                    oc.commentPosition: ''
+                    span: full
+                    type: text

@@ -1,0 +1,12 @@
+name: 'winter.mall::lang.common.customer_groups'
+modelClass: Winter\Mall\Models\CustomerGroup
+form: $/winter/mall/models/customergroup/fields.yaml
+defaultRedirect: winter/mall/customergroups
+create:
+    title: 'winter.mall::lang.titles.customer_groups.create'
+    redirect: 'winter/mall/customergroups/update/:id'
+    redirectClose: winter/mall/customergroups
+update:
+    title: 'winter.mall::lang.titles.customer_groups.update'
+    redirect: winter/mall/customergroups
+    redirectClose: winter/mall/customergroups

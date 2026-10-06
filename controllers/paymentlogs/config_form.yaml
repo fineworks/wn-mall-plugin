@@ -1,0 +1,11 @@
+name: 'winter.mall::lang.common.payment'
+modelClass: Winter\Mall\Models\PaymentLog
+form: $/winter/mall/models/paymentlog/fields.yaml
+defaultRedirect: winter/mall/paymentlogs
+create:
+    redirect: 'winter/mall/paymentlogs/update/:id'
+    redirectClose: winter/mall/paymentlogs
+update:
+    redirect: winter/mall/paymentlogs
+    redirectClose: winter/mall/paymentlogs
+preview: {  }

@@ -1,0 +1,11 @@
+name: 'winter.mall::lang.common.custom_fields'
+modelClass: Winter\Mall\Models\CustomField
+form: $/winter/mall/models/customfield/fields.yaml
+defaultRedirect: winter/mall/customfields
+create:
+    redirect: 'winter/mall/customfields/update/:id'
+    redirectClose: winter/mall/customfields
+update:
+    redirect: winter/mall/customfields
+    redirectClose: winter/mall/customfields
+preview: {  }

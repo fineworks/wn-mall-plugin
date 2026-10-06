@@ -1,0 +1,35 @@
+columns:
+    name:
+        label: 'winter.mall::lang.discounts.name'
+        type: text
+        searchable: true
+        sortable: true
+    valid_from:
+        label: 'winter.mall::lang.discounts.valid_from'
+        type: date
+        sortable: true
+    expires:
+        label: 'winter.mall::lang.discounts.expires'
+        type: date
+        sortable: true
+    number_of_usages:
+        label: 'winter.mall::lang.discounts.number_of_usages'
+        type: number
+        searchable: true
+        sortable: true
+    type:
+        label: 'winter.mall::lang.discounts.type'
+        type: text
+        searchable: true
+        sortable: true
+    trigger:
+        label: 'winter.mall::lang.discounts.trigger'
+        type: text
+        searchable: true
+        sortable: true
+    code:
+        label: 'winter.mall::lang.discounts.code'
+        type: text
+        searchable: true
+        sortable: true
+        clickable: false

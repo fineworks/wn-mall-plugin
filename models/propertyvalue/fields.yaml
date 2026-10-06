@@ -1,0 +1,11 @@
+fields:
+    property:
+        label: 'winter.mall::lang.common.property'
+        oc.commentPosition: ''
+        span: auto
+        type: relation
+    value:
+        label: 'winter.mall::lang.product.property_value'
+        oc.commentPosition: ''
+        span: auto
+        type: text

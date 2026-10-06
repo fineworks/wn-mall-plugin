@@ -1,0 +1,12 @@
+name: PaymentMethods
+modelClass: Winter\Mall\Models\PaymentMethod
+form: $/winter/mall/models/paymentmethod/fields.yaml
+defaultRedirect: winter/mall/paymentmethods
+create:
+    title: 'winter.mall::lang.titles.payment_methods.create'
+    redirect: 'winter/mall/paymentmethods/update/:id'
+    redirectClose: winter/mall/paymentmethods
+update:
+    title: 'winter.mall::lang.titles.payment_methods.edit'
+    redirect: winter/mall/paymentmethods
+    redirectClose: winter/mall/paymentmethods

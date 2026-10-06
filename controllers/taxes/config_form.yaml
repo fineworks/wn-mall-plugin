@@ -1,0 +1,12 @@
+name: 'winter.mall::lang.common.taxes'
+modelClass: Winter\Mall\Models\Tax
+form: $/winter/mall/models/tax/fields.yaml
+defaultRedirect: winter/mall/taxes
+create:
+    title: 'winter.mall::lang.titles.taxes.create'
+    redirect: 'winter/mall/taxes/update/:id'
+    redirectClose: winter/mall/taxes
+update:
+    title: 'winter.mall::lang.titles.taxes.update'
+    redirect: winter/mall/taxes
+    redirectClose: winter/mall/taxes

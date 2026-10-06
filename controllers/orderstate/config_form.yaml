@@ -1,0 +1,12 @@
+name: 'winter.mall::lang.common.order_states'
+modelClass: Winter\Mall\Models\OrderState
+form: $/winter/mall/models/orderstate/fields.yaml
+defaultRedirect: winter/mall/orderstate
+create:
+    title: 'winter.mall::lang.titles.order_states.create'
+    redirect: 'winter/mall/orderstate/update/:id'
+    redirectClose: winter/mall/orderstate
+update:
+    title: 'winter.mall::lang.titles.order_states.edit'
+    redirect: winter/mall/orderstate
+    redirectClose: winter/mall/orderstate

@@ -1,0 +1,6 @@
+<div class="mall-callout">
+    <p>{{ 'winter.mall::frontend.reviews.callout' | trans }}</p>
+    {% if __SELF__.isModerated and isNew %}
+        <p>{{ 'winter.mall::frontend.reviews.moderated' | trans }}</p>
+    {% endif %}
+</div>

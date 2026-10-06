@@ -1,0 +1,88 @@
+columns:
+    id:
+        label: 'winter.mall::lang.common.id'
+        type: number
+        sortable: true
+        invisible: true
+    order:
+        label: 'winter.mall::lang.order.order_number'
+        relation: order
+        type: number
+        searchable: true
+        sortable: true
+        select: order_number
+    failed:
+        label: 'winter.mall::lang.order.status'
+        type: partial
+        searchable: true
+        sortable: true
+        path: $/winter/mall/controllers/paymentlogs/_failed.htm
+    total:
+        label: 'winter.mall::lang.order.total'
+        type: partial
+        searchable: false
+        sortable: false
+        path: $/winter/mall/controllers/paymentlogs/_total.htm
+    order_data:
+        label: 'winter.mall::lang.order.data'
+        searchable: true
+        type: partial
+        path: $/winter/mall/controllers/paymentlogs/_order_data.htm
+        invisible: true
+        sortable: true
+    reference:
+        label: 'winter.mall::lang.common.reference'
+        type: text
+        searchable: true
+        sortable: true
+    payment_method:
+        label: 'winter.mall::lang.common.payment_method'
+        type: partial
+        searchable: true
+        sortable: true
+        path: $/winter/mall/controllers/paymentlogs/_payment_method.htm
+    payment_provider:
+        label: 'winter.mall::lang.common.payment_provider'
+        type: text
+        searchable: true
+        sortable: true
+        invisible: true
+    ip:
+        label: IP
+        type: text
+        searchable: true
+        sortable: true
+        invisible: true
+    session_id:
+        label: 'winter.mall::lang.common.session_id'
+        type: text
+        searchable: true
+        sortable: true
+        invisible: true
+    data:
+        label: 'winter.mall::lang.common.data'
+        type: text
+        searchable: true
+        invisible: true
+        sortable: true
+    message_raw:
+        label: 'winter.mall::lang.common.message'
+        type: text
+        searchable: false
+        sortable: false
+    code:
+        label: 'winter.mall::lang.common.code'
+        type: text
+        searchable: true
+        sortable: true
+    created_at:
+        label: 'winter.mall::lang.common.created_at'
+        type: datetime
+        searchable: true
+        sortable: true
+    updated_at:
+        label: 'winter.mall::lang.common.updated_at'
+        type: datetime
+        searchable: true
+        invisible: true
+        sortable: true

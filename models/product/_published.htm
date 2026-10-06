@@ -1,0 +1,9 @@
+<?php if($value): ?>
+<span class="wn-icon-circle text-success">
+    <?= e(trans('winter.mall::lang.product.published')) ?>
+</span>
+<?php else: ?>
+<span class="wn-icon-circle text-muted">
+    <?= e(trans('winter.mall::lang.product.not_published')) ?>
+</span>
+<?php endif; ?>

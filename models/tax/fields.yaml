@@ -1,0 +1,23 @@
+fields:
+    is_default:
+        type: switch
+        label: winter.mall::lang.tax.is_default
+        span: full
+        comment: 'winter.mall::lang.tax.is_default_comment'
+    name:
+        label: 'winter.mall::lang.common.name'
+        oc.commentPosition: ''
+        span: left
+        type: text
+    percentage:
+        label: 'winter.mall::lang.tax.percentage'
+        oc.commentPosition: ''
+        span: right
+        type: number
+    countries:
+        label: 'winter.mall::lang.tax.countries'
+        nameFrom: name
+        descriptionFrom: description
+        span: auto
+        type: relation
+        comment: 'winter.mall::lang.tax.countries_comment'

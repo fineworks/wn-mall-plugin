@@ -1,0 +1,4 @@
+title: 'winter.mall::lang.common.products'
+modelClass: Winter\Mall\Models\Product
+toolbar:
+    buttons: reorder_toolbar

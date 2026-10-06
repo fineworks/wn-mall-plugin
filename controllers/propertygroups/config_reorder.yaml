@@ -1,0 +1,5 @@
+title: 'winter.mall::lang.common.property_groups'
+modelClass: Winter\Mall\Models\PropertyGroup
+nameFrom: name
+toolbar:
+    buttons: reorder_toolbar

@@ -1,0 +1,14 @@
+fields:
+    name:
+        label: 'winter.mall::lang.common.name'
+        span: auto
+        type: text
+    _prices:
+        label: 'winter.mall::lang.product.price'
+        span: auto
+        type: mall.price
+    description:
+        label: 'winter.mall::lang.product.description'
+        size: small
+        span: full
+        type: richeditor

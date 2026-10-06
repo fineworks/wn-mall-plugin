@@ -1,0 +1,11 @@
+name: PriceCategories
+modelClass: Winter\Mall\Models\PriceCategory
+form: $/winter/mall/models/pricecategory/fields.yaml
+defaultRedirect: winter/mall/pricecategories
+create:
+    redirect: 'winter/mall/pricecategories/update/:id'
+    redirectClose: winter/mall/pricecategories
+update:
+    redirect: winter/mall/pricecategories
+    redirectClose: winter/mall/pricecategories
+preview: {  }

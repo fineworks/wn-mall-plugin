@@ -1,0 +1,22 @@
+# ===================================
+#  Relation Behavior Config
+# ===================================
+
+taxes:
+    label: 'winter.mall::lang.common.taxes'
+    view:
+        list: $/winter/mall/models/tax/columns.yaml
+        toolbarButtons: add|create|remove
+    manage:
+        form: $/winter/mall/models/tax/fields.yaml
+        recordsPerPage: 10
+    deferredBinding: true
+rates:
+    label: 'winter.mall::lang.common.rates'
+    view:
+        list: $/winter/mall/models/shippingmethodrate/columns.yaml
+        toolbarButtons: create|delete
+    manage:
+        form: $/winter/mall/models/shippingmethodrate/fields.yaml
+        recordsPerPage: 10
+    deferredBinding: true

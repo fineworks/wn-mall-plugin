@@ -1,0 +1,14 @@
+name: 'winter.mall::lang.common.category'
+modelClass: Winter\Mall\Models\Category
+form: $/winter/mall/models/category/fields.yaml
+defaultRedirect: winter/mall/categories
+create:
+    title: 'winter.mall::lang.titles.categories.create'
+    redirect: 'winter/mall/categories/update/:id'
+    redirectClose: winter/mall/categories
+update:
+    title: 'winter.mall::lang.titles.categories.update'
+    redirect: winter/mall/categories
+    redirectClose: winter/mall/categories
+preview:
+    title: 'winter.mall::lang.titles.categories.preview'

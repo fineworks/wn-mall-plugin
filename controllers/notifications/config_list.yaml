@@ -1,0 +1,14 @@
+title: 'winter.mall::lang.common.notifications'
+modelClass: Winter\Mall\Models\Notification
+list: $/winter/mall/models/notification/columns.yaml
+recordUrl: 'winter/mall/notifications/update/:id'
+noRecordsMessage: 'backend::lang.list.no_records'
+recordsPerPage: 20
+showSetup: true
+showSorting: 0
+defaultSort:
+    column: sort_order
+    direction: asc
+toolbar:
+    search:
+        prompt: 'backend::lang.list.search_prompt'

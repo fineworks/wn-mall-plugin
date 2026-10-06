@@ -1,0 +1,43 @@
+fields:
+    required:
+        label: 'winter.mall::lang.custom_fields.required'
+        span: left
+        type: switch
+        comment: 'winter.mall::lang.custom_fields.required_comment'
+    _prices:
+        label: 'winter.mall::lang.product.price'
+        span: right
+        type: mall.price
+    name:
+        label: 'winter.mall::lang.custom_fields.name'
+        oc.commentPosition: ''
+        span: auto
+        type: text
+
+    _type_dropdown:
+        label: 'winter.mall::lang.custom_fields.type'
+        oc.commentPosition: ''
+        options:
+            text: 'winter.mall::lang.custom_field_options.text'
+            textarea: 'winter.mall::lang.custom_field_options.textarea'
+            checkbox: 'winter.mall::lang.custom_field_options.checkbox'
+            dropdown: 'winter.mall::lang.custom_field_options.dropdown'
+            image: 'winter.mall::lang.custom_field_options.image'
+            color: 'winter.mall::lang.custom_field_options.color'
+        span: auto
+        type: dropdown
+
+    options:
+        type: partial
+        path: $/winter/mall/controllers/customfields/_field_options.htm
+        trigger:
+            action: show
+            field: _type_dropdown
+            condition: value[dropdown][image][color]
+
+    type:
+        label: 'winter.mall::lang.custom_fields.type'
+        oc.commentPosition: ''
+        span: auto
+        type: text
+        cssClass: 'hide oc-hide'

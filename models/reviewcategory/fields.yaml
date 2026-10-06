@@ -1,0 +1,5 @@
+fields:
+    name:
+        label: 'winter.mall::lang.common.name'
+        span: full
+        type: text

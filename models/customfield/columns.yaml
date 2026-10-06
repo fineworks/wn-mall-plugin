@@ -1,0 +1,17 @@
+columns:
+    name:
+        label: 'winter.mall::lang.custom_fields.name'
+        type: text
+        searchable: true
+        sortable: true
+    type:
+        label: 'winter.mall::lang.custom_fields.type'
+        type: partial
+        path: $/winter/mall/models/customfield/_type.htm
+        searchable: true
+        sortable: true
+    required:
+        label: 'winter.mall::lang.custom_fields.required'
+        type: partial
+        path: $/winter/mall/models/customfield/_required.htm
+        searchable: true

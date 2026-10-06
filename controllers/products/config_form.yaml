@@ -1,0 +1,15 @@
+name: 'winter.mall::lang.common.product'
+modelClass: Winter\Mall\Models\Product
+form: $/winter/mall/models/product/fields_edit.yaml
+defaultRedirect: winter/mall/products
+create:
+    title: 'winter.mall::lang.titles.products.create'
+    redirect: 'winter/mall/products/update/:id'
+    redirectClose: winter/mall/products
+    form: $/winter/mall/models/product/fields_create.yaml
+update:
+    title: 'winter.mall::lang.titles.products.update'
+    redirect: winter/mall/products
+    redirectClose: winter/mall/products
+preview:
+    title: 'winter.mall::lang.titles.products.preview'

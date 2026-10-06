@@ -1,0 +1,30 @@
+fields:
+    enabled:
+        label: 'winter.mall::lang.notifications.enabled'
+        span: auto
+        default: 1
+        type: switch
+        comment: 'winter.mall::lang.notifications.enabled_comment'
+    code:
+        label: 'winter.mall::lang.common.code'
+        span: auto
+        disabled: 1
+        type: text
+tabs:
+    fields:
+        name:
+            label: 'winter.mall::lang.common.name'
+            span: auto
+            type: text
+            tab: 'winter.mall::lang.product.description'
+        template:
+            label: 'winter.mall::lang.notifications.template'
+            span: auto
+            type: text
+            tab: 'winter.mall::lang.product.description'
+        description:
+            label: 'winter.mall::lang.product.description'
+            size: small
+            span: auto
+            type: textarea
+            tab: 'winter.mall::lang.product.description'

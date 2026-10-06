@@ -1,0 +1,12 @@
+# ===================================
+#  Relation Behavior Config
+# ===================================
+
+payment_logs:
+    label: 'winter.mall::lang.common.payment'
+    view:
+        list: $/winter/mall/models/paymentlog/columns.yaml
+        toolbarButtons: delete
+    manage:
+        form: $/winter/mall/models/paymentlog/fields.yaml
+        recordsPerPage: 10

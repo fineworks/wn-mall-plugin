@@ -1,0 +1,15 @@
+title: 'winter.mall::lang.common.order_states'
+modelClass: Winter\Mall\Models\OrderState
+list: $/winter/mall/models/orderstate/columns.yaml
+recordUrl: 'winter/mall/orderstate/update/:id'
+noRecordsMessage: 'backend::lang.list.no_records'
+recordsPerPage: 20
+showSetup: true
+showCheckboxes: true
+defaultSort:
+    column: sort_order
+    direction: asc
+toolbar:
+    buttons: list_toolbar
+    search:
+        prompt: 'backend::lang.list.search_prompt'

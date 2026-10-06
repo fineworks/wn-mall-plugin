@@ -1,0 +1,5 @@
+title: 'winter.mall::lang.common.customer_groups'
+modelClass: Winter\Mall\Models\CustomerGroup
+nameFrom: name
+toolbar:
+    buttons: reorder_toolbar

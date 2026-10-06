@@ -1,0 +1,46 @@
+fields:
+    customer:
+        label: 'winter.mall::lang.order.customer'
+        span: auto
+        type: dropdown
+    company:
+        label: 'winter.mall::frontend.form.company'
+        span: auto
+        type: text
+    lines:
+        label: 'winter.mall::frontend.form.address_lines'
+        size: ''
+        span: auto
+        type: textarea
+    name:
+        label: 'winter.mall::frontend.form.recipient'
+        span: auto
+        type: text
+    phone:
+        label: 'winter.mall::frontend.form.phone'
+        span: auto
+        type: text
+    zip:
+        label: 'winter.mall::frontend.form.zip'
+        span: left
+        type: text
+    city:
+        label: 'winter.mall::frontend.form.city'
+        span: right
+        type: text
+    country:
+        label: 'winter.mall::frontend.form.country'
+        type: dropdown
+        span: left
+        placeholder: rainlab.location::lang.country.select
+    state:
+        label: 'winter.mall::frontend.form.state'
+        type: dropdown
+        span: right
+        dependsOn: country
+        placeholder: rainlab.location::lang.state.select
+    details:
+        label: 'winter.mall::lang.product.details'
+        size: ''
+        span: auto
+        type: textarea

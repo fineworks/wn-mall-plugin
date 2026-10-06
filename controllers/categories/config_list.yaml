@@ -1,0 +1,23 @@
+title: 'winter.mall::lang.common.categories'
+modelClass: Winter\Mall\Models\Category
+list: $/winter/mall/models/category/columns.yaml
+recordUrl: 'winter/mall/categories/update/:id'
+noRecordsMessage: 'backend::lang.list.no_records'
+recordsPerPage: 20
+showSetup: true
+showCheckboxes: true
+toolbar:
+    buttons: list_toolbar
+    search:
+        prompt: 'backend::lang.list.search_prompt'
+
+# Legacy (v1)
+showTree: true
+treeExpanded: true
+
+# Reordering
+structure:
+    showTree: true
+    showReorder: true
+    treeExpanded: true
+    maxDepth: 0

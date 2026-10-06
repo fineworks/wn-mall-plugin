@@ -1,0 +1,13 @@
+name: 'winter.mall::lang.common.property_groups'
+modelClass: Winter\Mall\Models\PropertyGroup
+form: $/winter/mall/models/propertygroup/fields.yaml
+defaultRedirect: winter/mall/propertygroups
+create:
+    title: 'winter.mall::lang.titles.property_groups.create'
+    redirect: 'winter/mall/propertygroups/update/:id'
+    redirectClose: winter/mall/propertygroups
+update:
+    title: 'winter.mall::lang.titles.property_groups.edit'
+    redirect: winter/mall/propertygroups
+    redirectClose: winter/mall/propertygroups
+preview: {  }

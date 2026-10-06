@@ -1,0 +1,18 @@
+subject = "{{ 'winter.mall::mail.admin.payment_paid.subject' | trans({number: order.order_number}) }}"
+description = "Sent to the shop admin when a payment was succeeded"
+==
+{{ 'winter.mall::mail.admin.payment_paid.message' | trans() }}
+
+{% partial 'mall.order.addresses' order=order %}
+
+## {{ 'winter.mall::mail.common.order_details' | trans() }}
+
+{% partial 'mall.order.table' order=order %}
+
+{% partial 'panel' body %}
+    {% partial 'mall.order.payment_state' order=order %}
+{% endpartial %}
+
+{% partial 'button' url=order_url type='primary' body %}
+    {{ 'winter.mall::mail.common.view_order_in_backend' | trans() }}
+{% endpartial %}

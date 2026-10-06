@@ -1,0 +1,11 @@
+columns:
+    name:
+        label: 'winter.mall::lang.category.name'
+        type: text
+        searchable: true
+        sortable: true
+    slug:
+        label: 'winter.mall::lang.common.slug'
+        type: text
+        searchable: true
+        sortable: true
